@@ -10,8 +10,8 @@ $violet-line: #5c4eb1;
 .square {
     position: absolute;
     border: 2px solid $black-line;
-    width: 4px;
-    height: 4px;
+    width: 8px;
+    height: 8px;
     z-index: 20;
     transform: rotate(45deg);
     background-color: $white-line;
@@ -35,9 +35,9 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -250px 0 0 -150px;
-  height: 500px;
-  width: 300px;
+  margin: -300px 0 0 -200px;
+  height: 600px;
+  width: 400px;
   background: beige;
   font-family: 'Wire One', sans-serif;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 10px rgba(0, 0, 0, 0.28)
@@ -61,11 +61,11 @@ body {
 }
 
 .title {
-  top: 60%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
-  height: 10%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 8%;
   background-color: black;
   color: lightgreen;
   padding: 5%;
@@ -82,25 +82,26 @@ body {
 }
 
 .subtitle {
-  top: 85%;
-  height: 4%;
+  top: 81%;
+  height: 5%;
   background-color: black;
   color: snow;
 
     h3 {
+      font-family: sans-serif;
       align-self: center;
       position: relative;
-      left: 50%;
+      left: 51%;
       transform: translateX(-50%);
-      font-size: 1em;
-      font-weight: 400;
-      letter-spacing: .1em;
+      font-size: .7em;
+      letter-spacing: .17em;
+      font-weight: lighter;
     }
 }
 
 .author {
   bottom: 0;
-  height: 8%;
+  height: 10%;
   background-color: lime;
 
   h1 {
@@ -108,22 +109,26 @@ body {
     position: relative;
     left: 52%;
     transform: translateX(-50%);
-    font-size: 1.4em;
-    font-weight: 500;
-    letter-spacing: .55em;
+    font-size: 1.8em;
+    letter-spacing: .60em;
     text-transform: uppercase;
   }
 }
 
 .metro {
-  position: absolute;
+  position: relative;
   width: 100%;
-  height: 65%;
+  height: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 
   ul {
     padding: 0;
     margin: 0;
     position: absolute;
+    height: 300px;
+    width: 400px;
   }
   li {
     list-style: none;
@@ -131,102 +136,101 @@ body {
   }
 
   .bend {
-    transform: rotate(45deg);
-    transform-origin: 2px -3px;
+    transform: rotate(50deg);
+    transform-origin: 0 3px;
   }
   .bend-neg {
-    transform: rotate(-35deg);
+    transform: rotate(-50deg);
     transform-origin: 0 -7px;
   }
   .route {
-    width: 3px;
-    height: 3px;
+    width: 4px;
+    height: 4px;
     border-radius: 2px;
   }
 
   .blue-line {
-    top: 20px;
-    left: 144px;
+    top: 10%;
+    left: 48%;
 
     .blue {
       background-color: $blue-line;
     }
 
     #blue1 {
-      height: 40px;
+      height: 15%;
     }
     #blue2 {
-      top: 39px;
-      left: 3px;
-      height: 15px;
+      top: 13%;
+      height: 7%;
     }
     #blue3 {
-      top: 46px;
-      left: -26px;
-      width: 20px;
+      top: 17.5%;
+      left: -10%;
+      width: 7%;
     }
     #blue4 {
-      top: 48px;
-      left: -23px;
-      height: 35px;
+      top: 17%;
+      left: -10.5%;
+      height: 12%;
     }
     #blue5 {
-      top: 69px;
-      left: -61px;
-      width: 75px;
+      top: 25%;
+      left: -20%;
+      width: 24%;
     }
     #blue6 {
-      top: 71px;
-      left: -58px;
-      height: 20px;
+      top: 24.5%;
+      left: -20%;
+      height: 7%;
     }
     #blue7 {
-      top: 82px;
-      left: -73px;
-      height: 70px;
+      top: 29%;
+      left: -23.5%;
+      height: 25%;
     }
     #blue8 {
-      top: 120px;
-      left: -77px;
-      height: 120px;
+      top: 41%;
+      left: -24.5%;
+      height: 44%;
       z-index: 5;
     }
     #blue9 {
-      top: 150px;
-      left: -76px;
-      width: 9px;
+      top: 53%;
+      left: -24.5%;
+      width: 3%;
       border-radius: 0;
     }
     #blue10 {
-      top: 214px;
-      left: -5px;
-      height: 28px;
+      top: 67.5%;
+      left: 2%;
+      height: 13%;
     }
     #blue11 {
-      top: 72px;
-      left: 7px;
-      height: 40px;
+      top: 27%;
+      left: 2%;
+      height: 13%;
     }
     #blue12 {
-      top: 100px;
-      left: 33px;
-      height: 30px;
+      top: 33.5%;
+      left: 10.5%;
+      height: 13%;
     }
     #blue13 {
-      top: 130px;
-      left: 29px;
-      height: 135px;
+      top: 47.5%;
+      left: 9%;
+      height: 39%;
       z-index: 10;
     }
     #blue14 {
-      top: 237px;
-      left: 110px;
-      height: 30px;
+      top: 70.5%;
+      left: 32.5%;
+      height: 17%;
     }
     #blue15 {
-      top: 267px;
-      left: 113px;
-      height: 25px;
+      top: 85.5%;
+      left: 32.5%;
+      height: 15%;
     }
 
     .square-left,
@@ -234,43 +238,41 @@ body {
       @extend .square;
     }
     .square-right{
-      top: 25px;
-      left: 7px;
+      top: 6%;
+      left: 2.5%;
       @extend .right-square;
     }
     .square-left {
-      top: 25px;
-      left: -1px;
+      top: 6%;
+      left: -1%;
       @extend .left-square;
     }
   }
 
   .black-line {
-    left: 150px;
+    left: 50%;
 
     .black {
       background-color: $black-line;
     }
 
     #black1 {
-      height: 86px;
+      height: 34%;
       border-radius: 0;
-      z-index: 5;
     }
     #black2 {
-      top: 86px;
-      left: 3px;
-      height: 93px;
+      top: 33%;
+      height: 34%;
     }
     #black3 {
-      top: 149px;
-      left: -64px;
-      height: 84px;
+      top: 55%;
+      left: -20%;
+      height: 28%;
     }
     #black4 {
-      top: 234px;
-      left: -68px;
-      height: 36px;
+      top: 84%;
+      left: -21%;
+      height: 13%;
       z-index: 5;
     }
 
@@ -280,69 +282,68 @@ body {
       transform: rotate(135deg);
     }
     .square-right{
-      top: 134px;
-      left: -51px;
+      top: 49%;
+      left: -14%;
       @extend .right-square;
     }
     .square-left {
-      top: 125px;
-      left: -51px;
+      top: 45.5%;
+      left: -14%;
       @extend .left-square;
     }
   }
 
   .purple-line {
-    left: 147px;
+    left: 49%;
 
     .purple {
       background-color: $purple-line;
     }
 
     #purple1 {
-      height: 60px;
+      height: 25%;
       border-radius: 0;
     }
     #purple2 {
-      top: 60px;
-      left: 3px;
-      height: 65px;
+      top: 23%;
+      height: 24%;
     }
     #purple3 {
-      top: 103px;
-      left: -44px;
-      height: 114px;
+      top: 39%;
+      left: -13%;
+      height: 38%;
     }
     #purple4 {
-      top: 217px;
-      left: -42px;
-      height: 70px;
+      top: 75%;
+      left: -13%;
+      height: 24%;
       z-index: 6;
     }
     #purple5 {
-      top: 266px;
-      left: -102px;
-      height: 10px;
+      top: 91%;
+      left: -29%;
+      height: 5%;
       border-radius: 0;
-      transform: rotate(-50deg);
+      transform: rotate(-44deg);
     }
   }
 
   .white-line {
-    left: 86px;
+    left: 29%;
+    top: 72%;
 
     .white {
       background-color: $white-line;
     }
 
     #white1 {
-      top: 200px;
-      height: 40px;
+      height: 18%;
       z-index: 7;
     }
     #white2 {
-      top: 229px;
-      left: 26px;
-      height: 32px;
+      top: 9%;
+      left: 11%;
+      height: 10%;
       z-index: 5;
     }
 
@@ -351,267 +352,265 @@ body {
       @extend .square;
     }
     .square-right{
-      top: 196px;
-      left: 2px;
+      top: -2%;
+      left: 1.5%;
       @extend .right-square;
     }
     .square-left {
-      top: 196px;
-      left: -6px;
+      top: -2%;
+      left: -1.5%;
       @extend .left-square;
     }
   }
 
   .green-line {
-    left: 153px;
-    top: 12px;
+    left: 51%;
+    top: 6%;
 
     .green {
       background-color: $green-line;
     }
 
     #green1 {
-      height: 48px;
+      height: 19%;
     }
     #green2 {
-      top: 48px;
-      left: -4px;
-      height: 35px;
+      top: 19%;
+      left: -1.5%;
+      height: 15%;
     }
     #green3 {
-      top: 71px;
-      left: 19px;
-      width: 60px;
+      top: 27%;
+      left: 8%;
+      width: 14%;
     }
     #green4 {
-      top: 72px;
-      left: 76px;
-      height: 40px;
+      top: 27%;
+      left: 21%;
+      height: 12%;
     }
     #green5 {
-      top: 113px;
-      left: 72px;
-      height: 55px;
+      top: 40%;
+      left: 20%;
+      height: 14%;
     }
     #green6 {
-      top: 154px;
-      left: 107px;
-      height: 45px;
+      top: 47%;
+      left: 29%;
+      height: 17%;
     }
     #green7 {
-      top: 198px;
-      left: 110px;
-      height: 75px;
+      top: 63%;
+      left: 29%;
+      height: 33%;
     }
 
     .square-right {
       @extend .square;
-      top: 110px;
-      left: 72px;
+      top: 37%;
+      left: 20%;
     }
   }
 
   .brown-line {
-    top: 72px;
-    left: 146px;
+    top: 30%;
+    left: 49%;
 
     .brown {
       background-color: $brown-line;
     }
 
     #brown1 {
-      height: 63px;
+      height: 22%;
     }
     #brown2 {
-      top: 48px;
-      left: 39px;
-      height: 51px;
+      top: 12%;
+      left: 13.5%;
+      height: 22%;
     }
     #brown3 {
-      top: 99px;
-      left: 35px;
-      height: 23px;
+      top: 35%;
+      left: 12%;
+      height: 10%;
     }
     #brown4 {
-      top: 114px;
-      left: 52px;
-      height: 14px;
+      top: 39%;
+      left: 18.5%;
+      height: 10%;
     }
     #brown5 {
-      top: 128px;
-      left: 48px;
-      height: 82px;
+      top: 50%;
+      left: 17%;
+      height: 19%;
     }
     #brown6 {
-      top: 193px;
-      left: 100px;
-      height: 12px;
+      top: 59.5%;
+      left: 28.5%;
+      height: 7%;
     }
   }
 
   .pink-line {
-    top: 70px;
-    left: 205px;
+    top: 28%;
+    left: 66%;
 
     .pink {
       background-color: $pink-line;
     }
 
     #pink1 {
-      height: 65px;
+      height: 23%;
     }
     #pink2 {
-      top: 62px;
-      left: -44px;
-      width: 45px;
+      top: 22%;
+      left: -13%;
+      width: 14%;
     }
     #pink3 {
-      top: 62px;
-      left: -44px;
-      height: 60px;
+      top: 22%;
+      left: -13%;
+      height: 19%;
     }
     #pink4 {
-      top: 122px;
-      left: -48px;
-      height: 80px;
+      top: 42%;
+      left: -14%;
+      height: 16%;
     }
     #pink5 {
-      top: 184px;
-      left: 1px;
-      height: 7px;
+      top: 50%;
+      left: -4%;
+      height: 12%;
     }
   }
 
   .red-line {
-    top: 86px;
-    left: 85px;
+    top: 34%;
+    left: 28%;
 
     .red {
       background-color: $red-line
     }
 
     #red1 {
-      width: 96px;
+      width: 32%;
       border-radius: 0;
     }
     #red2 {
-      left: 95px;
-      height: 100px;
+      left: 31.5%;
+      height: 32%;
     }
     #red3 {
-      left: 91px;
-      top: 64px;
-      height: 84px;
+      left: 30%;
+      top: 23%;
+      height: 20%;
     }
     #red4 {
-      left: 143px;
-      top: 129px;
-      height: 46px;
+      left: 42.5%;
+      top: 34%;
+      height: 23%;
     }
     #red5 {
-      left: -2px;
-      height: 50px;
+      height: 15%;
     }
     #red6 {
-      left: -6px;
-      top: 26px;
-      height: 70px;
+      left: -1%;
+      top: 8%;
+      height: 33%;
     }
     #red7 {
-      left: -6px;
-      top: 51px;
-      height: 70px;
+      left: -1.5%;
+      top: 15.5%;
+      height: 33%;
     }
     #red8 {
-      left: 37px;
-      top: 80px;
-      height: 95px;
+      left: 19%;
+      top: 27%;
+      height: 30%;
     }
     #red9 {
-      left: 39px;
-      top: 160px;
-      height: 23px;
+      left: 19%;
+      top: 45%;
+      height: 18%;
     }
   }
 
   .violet-line {
-    left: 194px;
-    top: 84px;
+    left: 59%;
+    top: 34%;
 
     .violet {
       background-color: $violet-line;
     }
 
     #violet1 {
-      height: 53px;
+      height: 20%;
     }
     #violet2 {
-      left: 7px;
-      top: -1px;
-      height: 60px;
+      left: 1%;
+      top: -2%;
+      height: 20%;
     }
     #violet3 {
-      left: -85px;
-      top: 38px;
-      width: 51px;
+      left: -20.5%;
+      top: 11%;
+      width: 11.5%;
     }
     #violet4 {
-      left: -83px;
-      top: 40px;
-      height: 38px;
+      left: -20.5%;
+      top: 10.5%;
+      height: 17%;
     }
     #violet5 {
-      left: -111px;
-      top: 64px;
-      height: 52px;
+      left: -30%;
+      top: 22%;
+      height: 15%;
     }
     #violet6 {
-      left: -109px;
-      top: 116px;
-      height: 11px;
+      left: -30%;
+      top: 36%;
+      height: 6%;
     }
     #violet7 {
-      left: -118px;
-      top: 121px;
-      height: 20px;
+      left: -33%;
+      top: 40%;
+      height: 6.5%;
     }
     #violet8 {
-      left: -122px;
-      top: 141px;
-      height: 48px;
+      left: -34%;
+      top: 47%;
+      height: 19%;
     }
     #violet9 {
-      left: 33px;
-      top: 40px;
-      height: 30px;
+      left: 12.5%;
+      top: 11%;
+      height: 12%;
     }
     #violet10 {
-      left: 36px;
-      top: 69px;
-      height:65px;
+      left: 12%;
+      top: 21.5%;
+      height: 22%;
     }
     #violet11 {
-      top: 109px;
-      left: -12px;
-      height: 10px;
+      top: 34%;
+      height: 4%;
       border-radius: 0;
       transform: rotate(-42deg);
     }
     #violet12 {
-      left: 29px;
-      top: 70px;
-      height: 18px;
+      left: 11%;
+      top: 24%;
+      height: 8%;
     }
     #violet13 {
-      left: 43px;
-      top: 81px;
-      height: 91px;
+      left: 16.5%;
+      top: 27%;
+      height: 25.5%;
       z-index: 11;
     }
     #violet14 {
-      left: 45px;
-      top: 171px;
-      height: 10px;
+      left: 16.5%;
+      top: 51%;
+      height: 8%;
     }
   }
 }
