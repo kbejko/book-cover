@@ -7,11 +7,15 @@ $pink-line: #F51D8D;
 $brown-line: #874931;
 $white-line: #fff;
 $violet-line: #5c4eb1;
+$width: 400px;
+$height: 600px;
+$half-height: $height/2;
+$half-width: $width/2;
 .square {
     position: absolute;
-    border: 2px solid $black-line;
-    width: 8px;
-    height: 8px;
+    border: ($width * .005) solid $black-line;
+    width: $width * .02;
+    height: $width * .02;
     z-index: 20;
     transform: rotate(45deg);
     background-color: $white-line;
@@ -35,9 +39,10 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin: -300px 0 0 -200px;
-  height: 600px;
-  width: 400px;
+  margin-top: $half-height - $height;
+  margin-left: $half-width - $width;
+  height: $height;
+  width: $width;
   background: beige;
   font-family: 'Wire One', sans-serif;
   box-shadow: 0 0 6px rgba(0, 0, 0, 0.14), 0 6px 10px rgba(0, 0, 0, 0.28)
@@ -127,8 +132,8 @@ body {
     padding: 0;
     margin: 0;
     position: absolute;
-    height: 300px;
-    width: 400px;
+    height: $height/2;
+    width: 100%;
   }
   li {
     list-style: none;
@@ -144,93 +149,93 @@ body {
     transform-origin: 0 -7px;
   }
   .route {
-    width: 4px;
-    height: 4px;
-    border-radius: 2px;
+    width: $width * .01;
+    height: $width * .01;
+    border-radius: $width * .005;
   }
 
   .blue-line {
-    top: 10%;
-    left: 48%;
+    top: $half-height * .1;
+    left: $width * .48;
 
     .blue {
       background-color: $blue-line;
     }
 
     #blue1 {
-      height: 15%;
+      height: $half-height * .15;
     }
     #blue2 {
-      top: 13%;
-      height: 7%;
+      top: $half-height * .13;
+      height: $half-height * .07;
     }
     #blue3 {
-      top: 17.5%;
-      left: -10%;
-      width: 7%;
+      top: $half-height * .175;
+      left: $width * -.10;
+      width: $width * .08;
     }
     #blue4 {
-      top: 17%;
-      left: -10.5%;
-      height: 12%;
+      top: $half-height * .17;
+      left: $width * -.105;
+      height: $half-height * .12;
     }
     #blue5 {
-      top: 25%;
-      left: -20%;
-      width: 24%;
+      top: $half-height * .25;
+      left: $width * -.20;
+      width: $width * .24;
     }
     #blue6 {
-      top: 24.5%;
-      left: -20%;
-      height: 7%;
+      top: $half-height * .245;
+      left: $width * -.20;
+      height: $half-height * .07;
     }
     #blue7 {
-      top: 29%;
-      left: -23.5%;
-      height: 25%;
+      top: $half-height * .29;
+      left: $width * -.235;
+      height: $half-height * .25;
     }
     #blue8 {
-      top: 41%;
-      left: -24.5%;
-      height: 44%;
+      top: $half-height * .41;
+      left: $width * -.245;
+      height: $half-height * .44;
       z-index: 5;
     }
     #blue9 {
-      top: 53%;
-      left: -24.5%;
-      width: 3%;
+      top: $half-height * .53;
+      left: $width * -.245;
+      width: $width * .03;
       border-radius: 0;
     }
     #blue10 {
-      top: 67.5%;
-      left: 2%;
-      height: 13%;
+      top: $half-height * .675;
+      left: $width * .02;
+      height: $half-height * .13;
     }
     #blue11 {
-      top: 27%;
-      left: 2%;
-      height: 13%;
+      top: $half-height * .27;
+      left: $width * .02;
+      height: $half-height * .13;
     }
     #blue12 {
-      top: 33.5%;
-      left: 10.5%;
-      height: 13%;
+      top: $half-height * .335;
+      left: $width * .105;
+      height: $half-height * .13;
     }
     #blue13 {
-      top: 47.5%;
-      left: 9%;
-      height: 39%;
+      top: $half-height * .475;
+      left: $width * .09;
+      height: $half-height * .39;
       z-index: 10;
     }
     #blue14 {
-      top: 70.5%;
-      left: 32.5%;
-      height: 17%;
+      top: $half-height * .705;
+      left: $width * .325;
+      height: $half-height * .17;
     }
     #blue15 {
-      top: 85.5%;
-      left: 32.5%;
-      height: 15%;
+      top: $half-height * .855;
+      left: $width * .325;
+      height: $half-height * .15;
     }
 
     .square-left,
@@ -238,13 +243,13 @@ body {
       @extend .square;
     }
     .square-right{
-      top: 6%;
-      left: 2.5%;
+      top: $half-height * .06;
+      left: $width * .025;
       @extend .right-square;
     }
     .square-left {
-      top: 6%;
-      left: -1%;
+      top: $half-height * .06;
+      left: $width * -.01;
       @extend .left-square;
     }
   }
